@@ -1,1 +1,50 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Portal de Clientes — Abogado en Línea</title><link rel="stylesheet" href="style.css"></head><body><header><img src="/logo_azul_dorado.png" alt=""><h1>Portal de Clientes</h1><p>Accede a tu información y documentos.</p></header><main><div class="card" style="max-width:480px;text-align:center"><h2>Inicia Sesión</h2><form id="loginForm"><input type="email" id="email" placeholder="Correo" required style="width:100%;padding:12px;margin:6px 0;border:1px solid #ccc;border-radius:10px"><input type="text" id="causa" placeholder="ID de causa (ej. C-651-2024)" required style="width:100%;padding:12px;margin:6px 0;border:1px solid #ccc;border-radius:10px"><button type="submit" class="btn btn-gold" style="width:100%;margin-top:6px">Ingresar</button></form><p style="font-size:14px;color:#666;margin-top:8px">¿Problemas? <a href="mailto:contacto@abogadoenlinea.info">contacto@abogadoenlinea.info</a></p><p><a class="btn btn-navy" href="https://www.abogadoenlinea.info">← Volver al sitio</a></p></div></main><footer>⚖️ Landaeta Abogados Firma Legal ⚖️</footer><script>document.getElementById('loginForm').addEventListener('submit',e=>{e.preventDefault();sessionStorage.setItem('cliente_email',document.getElementById('email').value);sessionStorage.setItem('cliente_causa',document.getElementById('causa').value);window.location.href='panel.html';});</script></body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Portal de Clientes — Abogado en Línea</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="/public/logo_azul_dorado.png" alt="Abogado en Línea | Firma Legal ⚖️" />
+    <h1>Portal de Clientes</h1>
+    <p style="color:#444;margin:.25rem 0 .5rem">
+      📍 <b>Melipilla</b> · <b>Viña del Mar</b> · <b>Online a todo Chile</b> 🇨🇱
+    </p>
+    <p>Accede al estado de tu causa, documentos y mensajes.</p>
+  </header>
+
+  <main>
+    <div class="card" style="max-width:520px;text-align:center">
+      <h2>Inicia Sesión</h2>
+      <form id="loginForm">
+        <input style="width:100%;padding:12px;margin:6px 0;border:1px solid #ccc;border-radius:10px" type="email" id="email" placeholder="Correo electrónico" required>
+        <input style="width:100%;padding:12px;margin:6px 0;border:1px solid #ccc;border-radius:10px" type="text" id="causa" placeholder="ID de causa (ej. C-651-2024)" required>
+        <button type="submit" class="btn btn-gold" style="width:100%;margin-top:6px">Ingresar</button>
+      </form>
+      <p style="font-size:14px;color:#666;margin-top:8px">
+        ¿Problemas para ingresar? Escríbenos a
+        <a href="mailto:contacto@abogadoenlinea.info">contacto@abogadoenlinea.info</a>
+      </p>
+      <p style="text-align:center;margin-top:10px">
+        <a class="btn btn-navy" href="https://www.abogadoenlinea.info">← Volver al sitio</a>
+      </p>
+    </div>
+  </main>
+
+  <footer>Abogado en Línea | Firma Legal ⚖️</footer>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit',e=>{
+      e.preventDefault();
+      sessionStorage.setItem('cliente_email',document.getElementById('email').value);
+      sessionStorage.setItem('cliente_causa',document.getElementById('causa').value);
+      window.location.href='panel.html';
+    });
+  </script>
+</body>
+</html>
