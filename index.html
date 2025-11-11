@@ -1,147 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Abogado en Línea — Defensa cercana, clara y eficiente</title>
-  <meta name="description" content="Asesoría legal clara y cercana. Agenda tu consulta online y recibe orientación profesional. FamilIa, Penal, Laboral, Civil y más." />
-  <link rel="icon" href="/assets/logo.png" type="image/png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abogado en Línea — Tu defensa, a un clic de distancia</title>
+  <!-- <link rel="stylesheet" href="/styles.css"> -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --azul:#0D2241; --dorado:#B8904D; --negro:#111; --texto:#1b1b1b;
+    }
+    body{
+      margin:0;
+      background:url('/public/background_marmol_gris.jpg') center/cover fixed no-repeat;
+      font-family:'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--texto);
+    }
+    header{text-align:center;padding:40px 0 10px;}
+    header img{width:180px;height:auto;}
+    h1{font-family:'Playfair Display',serif;font-size:2.2rem;letter-spacing:.5px;color:var(--azul);margin-bottom:.3rem;}
+    p.slogan{font-weight:400;color:#444;margin-top:0;font-size:1rem;letter-spacing:.4px;}
+    .btn{display:inline-block;padding:14px 22px;border:none;border-radius:10px;font-weight:600;margin:6px;cursor:pointer;font-size:1rem;}
+    .btn-gold{background:var(--dorado);color:#fff;}
+    .btn-navy{background:var(--azul);color:#fff;}
+    .btn-black{background:#000;color:#fff;}
+    section{text-align:center;background:rgba(255,255,255,0.75);margin:40px auto;width:90%;border-radius:16px;padding:30px 10px;backdrop-filter:blur(3px);}
+    footer{background:var(--negro);color:#fff;padding:25px 0;text-align:center;font-size:.95rem;border-top:4px solid var(--dorado);}
+    footer img{width:110px;opacity:.9;margin-bottom:10px;}
+    footer a{color:var(--dorado);text-decoration:none;}
+  </style>
 </head>
 <body>
-  <header class="container header">
-    <div class="brand">
-      <img src="/assets/logo.png" alt="Abogado en Línea" class="logo" />
-    </div>
-    <nav class="nav">
-      <a href="#servicios">Servicios</a>
-      <a href="#areas">Áreas</a>
-      <a href="#agenda" class="btn small">Agendar</a>
-    </nav>
-  </header>
-
+  <div style="background:#B8904D;color:white;text-align:center;padding:8px;font-weight:600">
+    🎉 Consulta legal gratuita por videollamada durante noviembre.
+  </div>
+  <header><img src="/public/logo_azul_dorado.png" alt="Abogado en Línea"></header>
   <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <h1>Defensa cercana, clara y eficiente</h1>
-          <p>Asesoría legal online con respuesta rápida y lenguaje simple. Agenda tu consulta y recibe una hoja de ruta clara para tu caso.</p>
-          <div class="cta-row">
-            <a href="https://calendar.app.google/4Mr2qZ4ZYv2ur1e69" class="btn primary" target="_blank" rel="noopener">Agenda tu consulta</a>
-            <a href="mailto:abogadoenlinea@abogadoenlinea.info" class="btn ghost">Escríbenos</a>
-          </div>
-          <ul class="trust">
-            <li>Videollamada Google Meet</li>
-            <li>Atención en todo Chile</li>
-            <li>Primer diagnóstico claro</li>
-          </ul>
-        </div>
-        <div class="hero-card">
-          <div class="card">
-            <h3>Agenda rápida</h3>
-            <p>Reserva en 3 clics. Te llegará el enlace de la reunión automáticamente.</p>
-            <a href="https://calendar.app.google/4Mr2qZ4ZYv2ur1e69" class="btn secondary" target="_blank" rel="noopener">Reservar ahora</a>
-          </div>
-        </div>
+    <section>
+      <h1>ABOGADO EN LÍNEA</h1>
+      <p class="slogan">Tu defensa, a un clic de distancia.</p>
+      <div>
+        <a class="btn btn-gold" href="https://wa.me/56973451615?text=Quiero%20agendar%20videollamada">📹 Agenda videollamada</a>
+        <a class="btn btn-navy" href="https://wa.me/56973451615?text=Quiero%20consulta%20presencial">📍 Consulta presencial</a>
+        <a class="btn btn-black" href="https://wa.me/56973451615?text=Quiero%20pagar%20mi%20consulta">💳 Pagar consulta</a>
       </div>
     </section>
-
-    <section id="servicios" class="section container">
-      <h2>Servicios</h2>
-      <div class="grid-3">
-        <div class="card">
-          <h3>Familia</h3>
-          <p>Divorcios, alimentos, relación directa y regular, medidas de protección.</p>
-        </div>
-        <div class="card">
-          <h3>Penal</h3>
-          <p>Defensa, querellas, audiencias de control, cautela de garantías.</p>
-        </div>
-        <div class="card">
-          <h3>Laboral</h3>
-          <p>Despidos, cobro de prestaciones, tutela laboral, mediaciones.</p>
-        </div>
-        <div class="card">
-          <h3>Civil</h3>
-          <p>Contratos, arrendamientos, cobros, indemnizaciones, juicios civiles.</p>
-        </div>
-        <div class="card">
-          <h3>Consumo</h3>
-          <p>Reclamos SERNAC, garantías, incumplimientos y publicidad engañosa.</p>
-        </div>
-        <div class="card">
-          <h3>Asesoría Pymes</h3>
-          <p>Contratos, cobranzas, compliance básico, apoyo continuo mensual.</p>
-        </div>
-      </div>
+    <section>
+      <h2>¿Por qué elegir Abogado en Línea?</h2>
+      ⚡ Atención inmediata · 🤝 Asesoría clara · 🔒 Seguimiento en línea · ⚖️ Respaldo Landaeta Abogados
     </section>
-
-    <section id="areas" class="section container">
-      <h2>¿Cómo trabajamos?</h2>
-      <div class="steps">
-        <div class="step">
-          <span class="badge">1</span>
-          <h4>Agenda</h4>
-          <p>Elige día y hora para tu videollamada.</p>
-        </div>
-        <div class="step">
-          <span class="badge">2</span>
-          <h4>Diagnóstico</h4>
-          <p>Revisamos tu caso y te explicamos opciones reales.</p>
-        </div>
-        <div class="step">
-          <span class="badge">3</span>
-          <h4>Estrategia</h4>
-          <p>Definimos pasos, plazos y presupuesto de forma transparente.</p>
-        </div>
-      </div>
+    <section>
+      <h2>Áreas de práctica</h2>
+      👨‍👩‍👧 Familia · 🏛️ Civil · 🔐 Penal · 💼 Laboral
     </section>
-
-    <section id="agenda" class="section container highlight">
-      <div class="agenda-flex">
-        <div>
-          <h2>Agenda tu consulta</h2>
-          <p>Atención online por <strong>Google Meet</strong>, duración aproximada 30 minutos. Recibirás el enlace al confirmar.</p>
-          <a href="https://calendar.app.google/4Mr2qZ4ZYv2ur1e69" class="btn primary" target="_blank" rel="noopener">Abrir agenda</a>
-        </div>
-        <div class="contact-box">
-          <h3>Contacto</h3>
-          <ul class="contact">
-            <li><strong>Email:</strong> <a href="mailto:abogadoenlinea@abogadoenlinea.info">abogadoenlinea@abogadoenlinea.info</a></li>
-            <li><strong>WhatsApp:</strong> <a id="wa" href="#" target="_blank" rel="noopener">Escribir por WhatsApp</a></li>
-            <li><strong>Oficinas:</strong> Melipilla y Viña del Mar · Atención online a todo Chile</li>
-          </ul>
-        </div>
-      </div>
+    <section>
+      <h2>Tu consulta en tres pasos</h2>
+      1️⃣ Elige tipo de consulta · 2️⃣ Agenda horario online · 3️⃣ Conéctate con tu abogado
+    </section>
+    <section>
+      <h2>Accede a tu Intranet Privada</h2>
+      <p>Revisa el estado de tu causa, descarga documentos y comunícate con tu abogado.</p>
+      <a class="btn btn-navy" href="https://intranet.abogadoenlinea.info">🔐 Acceso Clientes</a>
     </section>
   </main>
-
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div class="foot-brand">
-        <img src="/assets/logo.png" alt="Abogado en Línea" class="logo small" />
-        <p>Tu defensa, a un clic de distancia.</p>
-      </div>
-      <div class="foot-links">
-        <a href="#servicios">Servicios</a>
-        <a href="#agenda">Agenda</a>
-        <a href="mailto:abogadoenlinea@abogadoenlinea.info">Contacto</a>
-      </div>
-      <div class="foot-legal">
-        <p>© 1762 Abogado en Línea — Landaeta Abogados Firma Legal ⚖️</p>
-      </div>
-    </div>
+  <footer>
+    📧 contacto@abogadoenlinea.info · ☎️ +56 9 7345 1615<br>
+    📍 Av. Anselmo Alarcón 118 (ex 175), Oficina 7, Melipilla, Región Metropolitana, Chile<br>
+    ⚖️ Landaeta Abogados Firma Legal ⚖️<br>
+    <a class="btn btn-gold" href="https://wa.me/56973451615">WhatsApp</a>
   </footer>
-
-  <script>
-    const waNumber = "56973451615"; // Reemplaza por tu número real en formato 569XXXXXXXX
-    const wa = document.getElementById('wa');
-    if (wa && waNumber && waNumber.length >= 9) {
-      wa.href = "https://wa.me/" + waNumber + "?text=Hola%2C%20quiero%20agendar%20una%20consulta%20legal";
-    }
-  </script>
 </body>
 </html>
