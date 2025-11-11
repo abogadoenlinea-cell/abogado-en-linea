@@ -1,0 +1,10 @@
+:root{--azul:#0D2241;--dorado:#B8904D;--negro:#111;}
+body{margin:0;background:url('/public/background_marmol_gris.jpg') center/cover fixed no-repeat;font-family:'Inter',sans-serif;color:#111;display:flex;flex-direction:column;min-height:100vh;}
+header{text-align:center;padding:36px 20px;}
+header img{width:180px;height:auto;}
+h1,h2{font-family:'Playfair Display',serif;color:var(--azul);}
+.card{background:rgba(255,255,255,0.85);backdrop-filter:blur(5px);border-radius:16px;padding:28px;width:min(1000px,94%);margin:16px auto;box-shadow:0 8px 25px rgba(0,0,0,.05);}
+.btn{padding:12px 20px;border:none;border-radius:10px;font-weight:600;cursor:pointer;}
+.btn-gold{background:var(--dorado);color:#fff;}
+.btn-navy{background:var(--azul);color:#fff;}
+footer{background:#000;color:#fff;border-top:4px solid var(--dorado);text-align:center;padding:18px;margin-top:auto;}
